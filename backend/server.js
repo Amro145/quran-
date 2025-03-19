@@ -7,10 +7,9 @@ import quran from "./Routes/quran.routes.js"
 
 app.use(express.json())
 app.use(cors({
-    origin: "*",
-    credentials: true
+    origin: "http://localhost:5173",
+    credentials: true,
 }))
-
 app.use("/api", quran)
 
 

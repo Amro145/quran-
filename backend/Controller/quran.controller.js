@@ -11,7 +11,7 @@ export const GetAllQuranList = async (req, res) => {
 export const GetSurah = async (req, res) => {
     const { id } = req.params
     try {
-        if (id > 1 && id < 115) {
+        if (id > 0 && id < 115) {
             const { default: GetSurah } = await import(`../data/surah/${id}.json`, { with: { type: "json" } })
             res.status(200).json({ GetSurah })
         } else {
