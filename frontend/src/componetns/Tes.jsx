@@ -18,6 +18,20 @@ function Tes() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="w-10"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+        />
+      </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-10"
         fill="currentColor"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -87,9 +101,66 @@ function Tes() {
           d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
         />
       </svg>
+
       <div className={style.loadingio_spinner_eclipse_4juan662yhp}>
         <div className={style.ldio_f74bbihe7ji}>
           <div></div>
+        </div>
+      </div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-10"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+        />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+        />
+      </svg>
+      <div className="container min-w-100px w-auto max-w-900 mx-auto mt-20">
+        <div className="card flex flex-col items-center bg-gradient-to-tr from-blue-400 to-red-400 text-xl font-mono p-4 rounded-md text-white">
+          <audio id="song" className="bg-red-700 block w-full max-w-md mx-auto" controls>
+            <source
+              src="https://open.spotify.com/track/7DE0I3buHcns00C0YEsYsY?si=5e0442c12f514f04"
+              type="audio/mpeg"
+            />
+          </audio>
+          <div className="mt-4">
+            <button
+              onclick="document.getElementById('song').play()"
+              className="bg-slate-600 px-2 rounded-lg hover:bg-slate-800"
+            >
+              Play
+            </button>
+            <button
+              onclick="document.getElementById('song').pause()"
+              className="bg-slate-600 px-2 rounded-lg hover:bg-slate-800"
+            >
+              Pause
+            </button>
+            <button
+              onclick="document.getElementById('song').volume += 0.1"
+              className="bg-slate-600 px-2 rounded-lg hover:bg-slate-800"
+            >
+              Vol +
+            </button>
+            <button
+              onclick="document.getElementById('song').volume -= 0.1"
+              className="bg-slate-600 px-2 rounded-lg hover:bg-slate-800"
+            >
+              Vol -
+            </button>
+          </div>
+          This is a music card
         </div>
       </div>
     </div>
