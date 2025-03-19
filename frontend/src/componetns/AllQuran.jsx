@@ -11,7 +11,8 @@ function AllQuran() {
   }, []);
   return (
     <>
-      <div >
+     
+      <div>
         <div className="bg-gray-800 flex justify-center items-center flex-wrap pt-10  ">
           {!isLoading &&
             quranList.length !== 0 &&
